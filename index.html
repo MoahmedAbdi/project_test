@@ -1,5 +1,4 @@
 <html>
-
 <input id=“input” placeholder=“Add the name of an item” style=“width:190px”></input>
 <br><br>
 <button id=“add”>Add Item</button>
@@ -28,7 +27,7 @@ function randomMember(arr) {
   return arr[randomInt(arr.length)];
 }
 facilitators = [];
-color = [“#33CC00”, “#FFFF00", “#CC66CC”];
+color = [“#33CC00", “#FFFF00”, “#CC66CC”];
 document.getElementById(“add”).addEventListener(“click”, (event) => {
   if (getNumberOrString(document.getElementById(“input”).value) == “”) {
     let element_added_info = document.getElementById(“added-info”);
@@ -44,10 +43,6 @@ document.getElementById(“add”).addEventListener(“click”, (event) => {
     element_added_info2.style.backgroundColor = randomMember(color);
   }
 });
-// document.getElementById(“select”).addEventListener(“click”, (event) => {
-//   let element_select_info = document.getElementById(“select-info”);
-//   element_select_info.innerText = randomMember(facilitators);
-// });
 document.getElementById(“show-all”).addEventListener(“click”, () => {
   let element_list_of_facilitators = document.getElementById(“list-of-items”);
   element_list_of_facilitators.replaceChildren();
